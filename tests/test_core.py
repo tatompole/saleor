@@ -106,7 +106,7 @@ def test_create_shipping_zones(db):
     assert ShippingZone.objects.all().count() == 0
     for _ in random_data.create_shipping_zones():
         pass
-    assert ShippingZone.objects.all().count() == 5
+    assert ShippingZone.objects.all().count() == 1
 
 
 def test_create_fake_user(db):
